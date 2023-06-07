@@ -1,0 +1,95 @@
+.container1 {
+  position: relative; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 7px;
+  margin-top: 5%;
+  margin-left: -10%;
+}
+
+.container1 img {
+  width: 250px;
+  height: 200px;
+  margin: 7px;
+}
+
+.container2 {
+  position: relative; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: -0.5%;
+  margin-left: -7%;
+}
+
+.container2 img {
+  width: 250px;
+  height: 200px;
+  margin: 7px;
+}
+
+.container1, .container2 {
+  transition: scroll-left 0.3s ease;
+ 
+}
+
+
+.container1 img, .container2 img {
+  flex-shrink: 0;
+  width: 250px;
+  height: 200px;
+  margin: 7px;
+}
+
+.arrow1  {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 15px;
+  position: relative; 
+}
+
+.arrow1 img {
+  width: 25px;
+  height: 25px;
+  margin-top: -10px;
+}
+
+.arrow1::before {
+  content: "";
+  position: absolute;
+  top: -24px; 
+  left: 917px; 
+  width: 54px; 
+  height: 54px; 
+  border: 1px solid #7650ff; 
+  z-index: -1;
+}
+
+.arrow2  {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 15px;
+  position: relative; /* Add this line */
+}
+
+.arrow2 img {
+  width: 25px;
+  height: 25px;
+  margin-top: -30px;
+}
+
+.arrow2::before {
+  content: "";
+  position: absolute;
+  top: -45px; 
+  left: 917px; 
+  width: 54px; 
+  height: 54px; 
+  border: 1px solid  #7650ff; 
+  z-index: -1;
+}
